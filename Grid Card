@@ -1,0 +1,178 @@
+square: false
+columns: 2
+type: grid
+cards:
+  - type: custom:button-card
+    name: Living Room
+    icon: mdi:sofa
+    tap_action:
+      action: navigate
+      navigation_path: living-room
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
+  - type: custom:button-card
+    name: Bedroom
+    icon: mdi:bed
+    tap_action:
+      action: navigate
+      navigation_path: bedroom
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
+  - type: custom:button-card
+    name: Bathroom
+    icon: mdi:toilet
+    tap_action:
+      action: navigate
+      navigation_path: bathroom
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
+  - type: custom:button-card
+    name: Outside
+    icon: mdi:tree
+    tap_action:
+      action: navigate
+      navigation_path: outside
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
+  - type: custom:button-card
+    name: Hallway
+    icon: mdi:door
+    tap_action:
+      action: navigate
+      navigation_path: hallway
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
+  - type: custom:button-card
+    name: Kitchen
+    icon: mdi:silverware-fork-knife
+    tap_action:
+      action: navigate
+      navigation_path: Kitchen
+    card_mod:
+      style: |
+        ha-card {
+          transition: all .2s ease-in-out;
+        }
+        ha-card:hover {
+          transform: scale(1.05); 
+          box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 0.2);
+        }
+    styles:
+      card:
+        - width: 120px
+        - height: 120px
+      grid:
+        - grid-template-areas: '"i" "n"'
+        - grid-template-columns: 1fr
+        - grid-template-rows: 1fr min-content min-content
+      img_cell:
+        - align-items: justify
+      name:
+        - align-items: justify
+        - padding-bottom: 10px
+        - font-weight: bold
