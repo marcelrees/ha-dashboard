@@ -1,0 +1,52 @@
+type: custom:button-card
+name: Default
+icon: mdi:sofa
+show_state: false
+card_mod:
+  style: |
+    ha-card {
+      transition: all .2s ease-in-out;
+      background: 
+        linear-gradient(217deg, rgba(241,90,34,1), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(238,0,242,1), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(100,83,214,1), rgba(0,0,255,0) 70.71%);
+    }
+    ha-card:hover {
+      transform: scale(1.03); 
+      box-shadow: 0px 2px 3px 2px rgb(0 0 0 / 0.1);
+    }
+tap_action:
+  action: call-service
+  service: scene.turn_on
+  service_data:
+    entity_id: scene.living_room_default
+styles:
+  card:
+    - width: 120px
+    - height: 120px
+  grid:
+    - grid-template-areas: '"i" "n" "s"'
+    - grid-template-columns: 1fr
+    - grid-template-rows: 1fr min-content min-content
+  img_cell:
+    - justify-content: start
+    - padding-left: 20px
+    - padding-top: 0px
+    - align-items: start
+    - margin: none
+  name:
+    - justify-self: start
+    - padding-left: 10px
+    - padding-bottom: 25px
+    - font-weight: bold
+  state:
+    - justify-self: start
+    - padding-left: 10px
+    - padding-bottom: 5px
+state:
+  - value: 'off'
+    styles:
+      card:
+        - filter: opacity(50%)
+      icon:
+        - filter: grayscale(100%)
